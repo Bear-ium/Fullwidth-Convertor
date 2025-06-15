@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Full-Width Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Full-Width Text Converter</h1>
+
+        <input type="text" id="inputText" placeholder="Enter text..." />
+        <button id="convertBtn">Convert</button>
+
+        <div id="resultSection">
+            <h2>Converted Result</h2>
+            <p id="outputText" class="output"></p>
+        </div>
+
+        <div id="historySection">
+            <h2>Conversion History</h2>
+            <button id="clearHistoryBtn">Clear History</button>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
