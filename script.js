@@ -22,7 +22,7 @@ function loadHistory() {
 function saveHistoryEntry(entry) {
     const history = JSON.parse(localStorage.getItem("fullwidthHistory")) || [];
     history.unshift(entry);
-    localStorage.setItem("fullwidthHistory", JSON.stringify(history.slice(0, 20)));
+    localStorage.setItem("fullwidthHistory", JSON.stringify(history.slice(0, 1000)));
 }
 
 function displayHistoryEntry(convertedText) {
